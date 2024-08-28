@@ -1,0 +1,22 @@
+install necessary library
+    1. supabase
+    2. pythhon-dotenv -> for store env variable
+
+crud step
+1. create .env file
+    -> in git of supabase-py we need to export SUPABASE_URL and SUPABASE_KEY 
+    -> we define it in .env file instead
+2. get url and key(use service_role secrete if we tick Row Level Security) in supabase website -> api tab in project
+
+auth
+1. go to auth section
+2.  choose provider -> email automatically added
+3. 
+
+storage
+1. go to storage section
+2. press "New bucket"
+3. fill name of bucket, tick public bucket (you can use Row Level Security but this for easy to use)
+
+Note
+if we anable Row Level Security -> when we want to use curl -> use secrete instread of public
